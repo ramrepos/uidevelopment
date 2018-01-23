@@ -1,9 +1,21 @@
 requirejs.config({
     baseUrl: 'js/lib',
     paths: {
-        app: '../app',
-        jquery: 'jquery-3.3.1.min',
-        knockout: 'knockout-3.4.2'
+        'app': '../app',
+        'knockout': 'knockout/knockout-3.4.0.debug',
+        'jquery': 'jquery/jquery-3.1.1',
+        'jqueryui-amd': 'jquery/jqueryui-amd-1.12.0',
+        'promise': 'es6-promise/es6-promise',
+        'hammerjs': 'hammer/hammer-2.0.8',
+        'ojdnd': 'dnd-polyfill/dnd-polyfill-1.0.0',
+        'ojs': 'oj/v3.1.0/debug',
+        'ojL10n': 'oj/v3.1.0/ojL10n',
+        'ojtranslations': 'oj/v3.1.0/resources',
+        'text': 'require/text',
+        'signals': 'js-signals/signals',
+        'customElements': 'webcomponents/CustomElements',
+        'proj4': 'proj4js/dist/proj4-src',
+        'css': 'require-css/css'
     }
 });
 
@@ -32,9 +44,13 @@ requirejs(["knockout", "jquery"], function(ko, $) {
             viewModel: {require: "app/viewmodel/personal-details"},
             template : { require: "text!app/html/personal-details.html" }
         });
+        ko.components.register('personal-details-chart', {
+            viewModel: {require: "app/viewmodel/personal-details-chart"},
+            template : { require: "text!app/html/personal-details-chart.html" }
+        });
     });
     
     var vm = new ViewModel();
     
-    ko.applyBindings(vm, document.getElementById('plainko'));
+    ko.applyBindings(vm, document.getElementById('body'));
 });

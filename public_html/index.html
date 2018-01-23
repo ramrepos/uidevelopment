@@ -12,8 +12,10 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" href="css/libs/oj/v3.1.0/alta/oj-alta-min.css" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script data-main="js/main" src="js/lib/require.js"></script>       
+        <script data-main="js/main" src="js/lib/require/require.js"></script>       
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -28,10 +30,11 @@
             <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
             <span id="fullName" data-bind="text: fullName"></span>
             
-             <h4 data-bind="text: componentko"></h4>        
-             <div data-bind="component: {name: 'personal-details-form'}"></div>
+            
         </div>
-
+ <h4 data-bind="text: componentko"></h4>        
+             <div data-bind="component: {name: 'personal-details-form'}"></div>
+             <div data-bind="component: {name: 'personal-details-chart'}"></div>
        
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
