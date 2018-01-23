@@ -21,19 +21,16 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        
-        <input id="firstName" placeholder="Enter first name" />
-        <input id="lastName" placeholder="Enter last name" />
-        <button id="submitName" value="submitName" title="Submit" onclick="lib.submitName()">lib/Submit</button>
-        <button id="submitName" value="submitName" title="Submit" onclick="app.submitName()">app/Submit</button>
+
+        <input id="firstName" placeholder="Enter first name" data-bind="value: firstName"/>
+        <input id="lastName" placeholder="Enter last name" data-bind="value: lastName"/>        
         <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
-        <span id="fullName"></span>
+        <span id="fullName" data-bind="text: fullName"></span>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-            
-        
+        <script src="js/plugins.js"></script>  
+
+
     </body>
 </html>
