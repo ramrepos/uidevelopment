@@ -21,12 +21,18 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div id="plainko">
+            <h4 data-bind="text: plainko"></h4>
+            <input id="firstName" placeholder="Enter first name" data-bind="value: firstName"/>
+            <input id="lastName" placeholder="Enter last name" data-bind="value: lastName"/>        
+            <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
+            <span id="fullName" data-bind="text: fullName"></span>
+            
+             <h4 data-bind="text: componentko"></h4>        
+             <div data-bind="component: {name: 'personal-details-form'}"></div>
+        </div>
 
-        <input id="firstName" placeholder="Enter first name" data-bind="value: firstName"/>
-        <input id="lastName" placeholder="Enter last name" data-bind="value: lastName"/>        
-        <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
-        <span id="fullName" data-bind="text: fullName"></span>
-
+       
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>  
