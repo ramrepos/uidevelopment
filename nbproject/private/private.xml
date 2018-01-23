@@ -5,13 +5,16 @@
         <group name="Exadata">
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/Gruntfile.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/index.html</file>
-            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/plugins.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/bower.json</file>
-            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/gulpfile.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/app/app.js</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/app/viewmodel/personal-details.js</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/main.js</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/app/html/personal-details.html</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/plugins.js</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/css/main.css</file>
+            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/gulpfile.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/app/lib.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/package.json</file>
-            <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/public_html/js/main.js</file>
             <file>file:/C:/Users/rrarajag/Documents/NetBeansProjects/HTML5Application/.bowerrc</file>
         </group>
     </open-files>
