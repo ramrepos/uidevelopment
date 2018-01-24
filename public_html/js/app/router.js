@@ -11,7 +11,8 @@ function(oj, ko, $) {
         router.configure(
         {
           'form':  { label: 'Form', isDefault: true, value: 'personal-details-form' },
-          'chart':  { label: 'Chart', value :'personal-details-chart' }
+          'chart':  { label: 'Chart', value :'personal-details-chart' },
+          'compare' : {  label: 'Compare', value: 'compare-module' }
         });
     };
     var routerConfig = new RouterConfig();    
