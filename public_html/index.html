@@ -13,8 +13,17 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-         <script  src="js/app/app.js"></script>       
-       <script  src="js/app/lib.js"></script>  
+        <script type="text/javascript">
+            function submitName() {
+                 var fName = document.getElementById('firstName').value;
+                var lName = document.getElementById('lastName').value;
+                if (fName && fName.length >0 && lName && lName.length > 0) {
+                var fullName = lName + ',' + fName;
+                document.getElementById('fullName').innerText = fullName;
+            }
+             }
+        </script>
+      
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,8 +34,8 @@
         
         <input id="firstName" placeholder="Enter first name" />
         <input id="lastName" placeholder="Enter last name" />
-        <button id="submitName" value="submitName" title="Submit" onclick="lib.submitName()">lib/Submit</button>
-        <button id="submitName" value="submitName" title="Submit" onclick="app.submitName()">app/Submit</button>
+        <button id="submitName" value="submitName" title="Submit" onclick="submitName()">Submit</button>
+        
         <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
         <span id="fullName"></span>
 
