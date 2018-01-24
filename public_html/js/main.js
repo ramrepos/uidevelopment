@@ -19,24 +19,16 @@ requirejs.config({
     }
 });
 
-requirejs(["knockout", "jquery"], function(ko, $) {
+requirejs(["knockout", "jquery","app/router",'ojs/ojtoolbar', 'ojs/ojbutton'], function(ko, $, router) {
     //This function is called when app/app.js and app/lib.js is loaded.
     //If app.js calls define(), then this function is not fired until
     //app's dependencies have loaded, and the app argument will hold
     //the module value for "app/app".
     
     function ViewModel(){
-        var self = this;
-        
-        self.plainko = ko.observable('KO Plain');
-        self.componentko = ko.observable('KO Component');
-        
-        
-        self.firstName = ko.observable('');
-        self.lastName = ko.observable('');
-        self.fullName = ko.pureComputed(function(){
-            return self.lastName() +  ', ' + self.firstName();
-        },self);  
+        var self = this;        
+        self.router = oj.Router.rootInstance;    
+      
     }
     
     $(function(){
@@ -48,9 +40,12 @@ requirejs(["knockout", "jquery"], function(ko, $) {
             viewModel: {require: "app/viewmodel/personal-details-chart"},
             template : { require: "text!app/html/personal-details-chart.html" }
         });
+        router.init();
+        var vm = new ViewModel();   
+        oj.Router.sync().then(function(){
+             ko.applyBindings(vm, document.getElementById('body'));
+        });
     });
     
-    var vm = new ViewModel();
     
-    ko.applyBindings(vm, document.getElementById('body'));
 });

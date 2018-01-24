@@ -7,7 +7,10 @@ define(['knockout'], function(ko){
         self.firstName = ko.observable('');
         self.lastName = ko.observable('');
         self.fullName = ko.pureComputed(function(){
-            return self.lastName() +  ', ' + self.firstName();
+            if(self.lastName().length && self.firstName().length)
+                return self.lastName() +  ', ' + self.firstName();
+            else 
+                return '';
         },self);  
     };
     
