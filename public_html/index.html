@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-         <script  src="js/app/app.js"></script>       
+        <script  src="js/app/util.js"></script>    
+        <script  src="js/app/app.js"></script>       
        <script  src="js/app/lib.js"></script>  
     </head>
     <body>
@@ -25,7 +26,8 @@
         
         <input id="firstName" placeholder="Enter first name" />
         <input id="lastName" placeholder="Enter last name" />
-        <button id="submitName" value="submitName" title="Submit" onclick="submitName()">Submit</button>
+        <button id="appSubmitName" value="appSubmitName" title="Submit" onclick="app.submitName()">app/Submit</button>
+        <button id="libSubmitName" value="libSubmitName" title="Submit" onclick="lib.submitName()">lib/Submit</button>
         <label id="fullNameLabel" title="fullname" style="display: block">Full Name: </label>
         <span id="fullName"></span>
 
