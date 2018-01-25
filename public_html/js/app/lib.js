@@ -1,5 +1,5 @@
- var lib;
- lib =
+ define([],function(){
+ var lib =
          {
              submitName : function() {
                  var fName = document.getElementById('firstName').value;
@@ -8,6 +8,8 @@
                 document.getElementById('fullName').innerText = fullName;
              }
  };
+ return lib;
+ });
 
             
         

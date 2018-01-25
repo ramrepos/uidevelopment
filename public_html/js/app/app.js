@@ -1,3 +1,4 @@
+ define([],function(){
  var app =
          {
              submitName : function() {
@@ -7,6 +8,8 @@
                 document.getElementById('fullName').innerText = fullName;
              }
  };
+ return app;
+ });
 
             
         
