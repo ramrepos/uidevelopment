@@ -3,12 +3,15 @@ define(['app/model/WeatherModel','app/service/ServiceCallManager'],function(Weat
         var self = this;
         self.compareObj = compareObj;
     };
-    CompareModel.prototype.compare = function(city){
+    CompareModel.prototype.compare = function(input){
         var self = this;
         if (self.compareObj.attribute === 'weather'){
             if (self.compareObj.filter === 'city') {
+                if (!(input && input.length > 0)){
+                    return;
+                }
                 var weatherModel = new WeatherModel(serviceCallManager);
-                return weatherModel.getCityWeather(city);
+                return weatherModel.getCityWeather(input);
             }
         }
         return null;

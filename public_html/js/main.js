@@ -33,23 +33,23 @@ requirejs(["knockout", "jquery","app/router",'ojs/ojtoolbar', 'ojs/ojbutton'], f
     
     $(function(){
         ko.components.register('personal-details-form', {
-            viewModel: {require: "app/viewmodel/personal-details"},
-            template : { require: "text!app/html/personal-details.html" }
+            viewModel: {require: "app/components/viewmodel/personal-details"},
+            template : { require: "text!app/components/html/personal-details.html" }
         });
         ko.components.register('personal-details-chart', {
-            viewModel: {require: "app/viewmodel/personal-details-chart"},
-            template : { require: "text!app/html/personal-details-chart.html" }
+            viewModel: {require: "app/components/viewmodel/personal-details-chart"},
+            template : { require: "text!app/components/html/personal-details-chart.html" }
         });
         ko.components.register('compare-input-form', {
-            viewModel: {require: "app/viewmodel/compare-input-form"},
-            template : { require: "text!app/html/compare-input-form.html" }
+            viewModel: {require: "app/components/viewmodel/compare-input-form"},
+            template : { require: "text!app/components/html/compare-input-form.html" }
         });
         ko.components.register('compare-output-details', {
-            viewModel: {require: "app/viewmodel/compare-output-details"},
-            template : { require: "text!app/html/compare-output-details.html" }
+            viewModel: {require: "app/components/viewmodel/compare-output-details"},
+            template : { require: "text!app/components/html/compare-output-details.html" }
         });
         ko.components.register('compare-module', {
-            template : { require: "text!app/html/compare-module.html" }
+            template : { require: "text!app/components/html/compare-module.html" }
         });
         router.init();
         var vm = new ViewModel();   
