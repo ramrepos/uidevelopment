@@ -1,5 +1,4 @@
 #   UI Development Demo
-- - -
 
 GitHub repos: `git clone https://github.com/ramrepos/uidevelopment.git uidevelopment`
 Note: If you are cloning within the company network, then configure proxy as follows:
@@ -7,24 +6,24 @@ Note: If you are cloning within the company network, then configure proxy as fol
 
 After cloning, open the clone in NetBeans and run index.html to see the application in action.  Do the same after doing a `git checkout <branchname>` for each of the following branches that correspond to a unit in this demo.
 Branches:
-+   Master
++   ## Master
 	+   JavaScript is the programming language of the web; that enables dynamic user interface 
-+   unit1.0_javascript_inline
++   ## unit1.0_javascript_inline
     +   Logic and UI within html file is not a good idea from maintenance stand point
-+   unit1.1_javascript_include
++   ## unit1.1_javascript_include
 	+   Separating concern is good; by having the logic inside separate JS files and including the same in HTML
-+   unit1.2_javascript_namespace
++   ## unit1.2_javascript_namespace
 	+   Inline JS/Included JS files should not pollute global namespace (a.k.a. scope).  Meaning, the variables and functions declared within the included JS files run the risk of getting overwritten if not properly scoped.
-+   unit2_requirejs
++   ## unit2_requirejs
 	+   Modularity avoids polluting global namespace and improves robustness of our codebase; require.js is a library that enables us to write modular JS applications 
-+   unit3_knockoutjs
++   ## unit3_knockoutjs
 	+   2-way data binding involves 
 		+   Updating UI when model changes
 		+   Updating model with user input
 	+   Performing this by hand is tedious and error prone.  Knockout.js handles this for us.
-+   unit4_ojet
++   ## unit4_ojet
 	+   Oracle JET – is a collection of JS libraries viz., knockout, require and jQuery.  It has OOB support for various UI controls such as visualization, navigation etc.
-+   unit5_router_ajax_pubsub
++   ## unit5_router_ajax_pubsub
 	+   Routers enable SPA (Single Page Applications) development. Routers manipulate browser history to achieve the same.
 	+   Upon clicking navigation items such as tabs, links in nav pane - routers update the browser history (URL), loads the modules based on the updated URL (router state) without refreshing the entire page.   This makes for a seamless user experience. Entire application feels like a single page, when in fact, there are multiple JS modules that are loaded in place without page refresh.  This renders the application its single page behavior.
 	+   Data, for individual modules and components within the modules, is typically fetched from REST endpoints using AJAX requests.
