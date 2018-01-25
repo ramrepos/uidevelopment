@@ -15,7 +15,9 @@ Branches:
 +   ## [unit1.2_javascript_namespace](https://github.com/ramrepos/uidevelopment/tree/unit1.2_javascript_namespace)
 	+   Inline JS/Included JS files should not pollute global namespace (a.k.a. scope).  Meaning, the variables and functions declared within the included JS files run the risk of getting overwritten if not properly scoped.
 +   ## [unit2_requirejs](https://github.com/ramrepos/uidevelopment/tree/unit2_requirejs)
-	+   Modularity avoids polluting global namespace and improves robustness of our codebase; require.js is a library that enables us to write modular JS applications 
+	+   Define order of loading using require.js 
++   ## [unit2.1_requirejs_module_definition](https://github.com/ramrepos/uidevelopment/tree/unit2.1_requirejs_module_definition)
+	+   Modularity avoids polluting global namespace and improves robustness of our codebase; require.js is a library that enables us to write modular JS applications
 +   ## [unit3_knockoutjs](https://github.com/ramrepos/uidevelopment/tree/unit3_knockoutjs)
 	+   2-way data binding involves 
 		+   Updating UI when model changes
