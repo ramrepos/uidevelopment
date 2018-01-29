@@ -17,7 +17,7 @@ Branches:
 +   ## [unit2_requirejs](https://github.com/ramrepos/uidevelopment/tree/unit2_requirejs)
 	+   Define order of loading using [require.js](http://requirejs.org/)
 +   ## [unit2.1_requirejs_module_definition](https://github.com/ramrepos/uidevelopment/tree/unit2.1_requirejs_module_definition)
-	+   Modularity avoids polluting global namespace and improves robustness of our codebase; require.js is a library that enables us to write modular JS applications
+	+   Modularity avoids polluting global namespace and improves robustness of our codebase; [require.js](http://requirejs.org/) is a library that enables us to write modular JS applications
 +   ## [unit3_knockoutjs](https://github.com/ramrepos/uidevelopment/tree/unit3_knockoutjs)
 	+   2-way data binding involves 
 		+   Updating UI when model changes
